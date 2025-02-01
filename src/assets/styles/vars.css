@@ -6,9 +6,10 @@
     --bg-icon: #131313;
     --bg-arrow-color: rgba(0,0,07);
     --bg-search-color: #242424;
-    --color-search: #fff;
+    --text-base-light: #fff;
+    --text-base-dark: #000;
     --color-subscribe: #a7a7a7;
-    --color-login: #000;
     --bg-header-color: #121212;
+    --bg-playlist-color: #121212;
 }
 

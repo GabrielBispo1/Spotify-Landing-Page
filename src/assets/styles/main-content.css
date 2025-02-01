@@ -66,7 +66,7 @@
     background: transparent;
     border: none;
     padding: 0px 100px 0px 12px;
-    color: var(--color-search);
+    color: var(--text-base-light);
     text-overflow: ellipsis;
     overflow: hidden;
     white-space: nowrap;
@@ -85,8 +85,33 @@
 .header__login .login {
     width: 100px;
     height: 48px;
-    color: var(--color-login);
+    color: var(--text-base-dark);
     font-size: 16px;
     font-weight: 700;
     border-radius: 40px;
+}
+
+.playlist-container {
+    height: 68vh;
+    padding-top: 16px;
+    margin: 10px;
+    border-radius: 10px;
+    background-color: var(--bg-playlist-color);
+}
+
+.playlist {
+    margin: 24px;
+}
+
+.playlist .greeting {
+    color: var(--text-base-light);
+    font-size: 32px;
+    font-weight: 700;
+    margin-bottom: 48px;
+}
+
+.playlist .greeting-subtitle {
+    color: var(--text-base-light);
+    font-size: 24px;
+    font-weight: 700;
 }
