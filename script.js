@@ -1,34 +1,31 @@
-const searchInput = document.getElementById('search-input');
-const resultArtist = document.getElementById("result-artist");
-const resultPlaylist = document.getElementById('result-playlists');
+// Obtém a referência do elemento com o ID "greeting"
+const greetingElement = document.getElementById("greeting");
 
-function requestApi(searchTerm) {
-    const url = `http://localhost:3000/artists?name_like=${searchTerm}`  // URL da API
-    fetch(url)  // Fazendo a requisição
-        .then((response) => response.json())  // Convertendo a resposta para JSON
-        .then((result) => displayResults(result))  // Exibindo os resultados
-}
+// Obtém a hora atual do sistema
+const currentHour = new Date().getHours();
 
-function displayResults(result) {
-    resultPlaylist.classList.add("hidden")
-    const artistName = document.getElementById('artist-name');
-    const artistImage = document.getElementById('artist-img');
+// Define a saudação com base na hora atual - Simplificado
+const greetingMessage =
+  currentHour >= 5 && currentHour < 12
+    ? "Bom dia"
+    : currentHour >= 12 && currentHour < 18
+    ? "Boa tarde"
+    : "Boa noite";
 
-    result.forEach((element) => {  // Iterando sobre os resultados
-        artistName.innerText = element.name;  // Adicionando o nome do artista
-        artistImage.src = element.urlImg;  // Adicionando a imagem do artista
-    });
+greetingElement.textContent = greetingMessage;
 
-    resultArtist.classList.remove('hidden');  // Removendo a classe 'hidden' para mostrar o elemento
-}
+// GRID INTELIGENTE
+const container = document.querySelector(".offer__list-item");
 
-searchInput.addEventListener('input', function () {
-    const searchTerm = searchInput.value.toLowerCase();
-    if (searchTerm === '') {
-        resultPlaylist.classList.add('hidden');  // Adicioando a classe 'hidden' para esconder o elemento
-        resultArtist.classList.remove('hidden');  // Removendo a classe 'hidden' para mostrar o elemento
-        return;
-    }
-    
-    requestApi(searchTerm);
-})
+const observer = new ResizeObserver(() => {  //mudanças no tamanho do elemento 
+  const containerWidth = container.offsetWidth; //largura total do elemento, incluindo largura do conteúdo, bordas e preenchimento.
+  const numColumns = Math.floor(containerWidth / 225); //número de colunas com base na largura do container
+
+  //largura mínima de 200px e máxima de 1fr (uma fração do espaço disponível).
+  container.style.gridTemplateColumns = `repeat(${numColumns}, minmax(200px, 1fr))`;
+
+  console.log({ container });
+  console.log({ numColumns });
+});
+//observando a mudança do elemento
+observer.observe(container);

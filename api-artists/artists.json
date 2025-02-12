@@ -47,6 +47,18 @@
       "name": "EXO",
       "genre": "Kpop",
       "urlImg": "https://i.scdn.co/image/ab6761610000e5ebaf3c4b988a6fef40843cdc83"
+    },
+    {
+      "id": 9,
+      "name": "Taylor Swift",
+      "genre": "Pop",
+      "urlImg": "https://i.scdn.co/image/ab6761610000e5eb859e4c14fa59296c8649e0e4"
+    },
+    {
+      "id": 10,
+      "name": "Slipknot",
+      "genre": "Rock",
+      "urlImg": "https://i.scdn.co/image/ab6761610000e5eb575ff7654f087a7e667230a4"
     }
   ]
 }

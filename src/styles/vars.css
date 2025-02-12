@@ -3,14 +3,14 @@
     --font-dm-sans: "DM Sans", sans-serif;   
 
     /* COLORS */
-    --bg-icon: #131313;
-    --bg-arrow-color: rgba(0,0,07);
-    --bg-search-color: #242424;
     --text-base-light: #fff;
     --text-base-dark: #000;
     --color-subscribe: #a7a7a7;
-    --bg-header-color: #121212;
-    --bg-playlist-color: #121212;
+
+    --bg-arrow-color: rgba(0,0,07);
+    --bg-icon: #131313;
+    --grid-gap: 24px;
+    --column-count: 5;
 }
 
 /* MEDIA QUERYS */
@@ -19,4 +19,3 @@
 
 @media screen and (min-width: 768px) and (max-width: 1274px) {
 }
-

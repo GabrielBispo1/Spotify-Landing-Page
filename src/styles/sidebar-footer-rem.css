@@ -8,55 +8,55 @@ body {
     top: 0;
     left: 0;
     bottom: 0;
-    padding: 12px;
-    width: 300px;
+    padding: 0.75rem;
+    width: 18.75rem;
 }
 
 .sidebar__navigation {
     background-color: #121212;
-    border-radius: 8px;
-    padding: 16px 0 0 16px;
+    border-radius: 0.5rem;
+    padding: 1rem 0 0 1rem;
 }
 
 .sidebar__navigation .logo {
     background: #121212;
     display: flex;
-    border-radius: 8px;
-    padding: 16px 0 0 16px;
+    border-radius: 0.5rem;
+    padding: 1rem 0 0 1rem;
 }
 
 .logo img {
-    width: 80px;
+    width: 5rem;
 }
 
 .sidebar nav ul {
-    margin-top: 20px;
-    padding: 0 20px 10px 20px;
+    margin-top: 1.25rem;
+    padding: 0 1.25rem 0.625rem 1.25rem;
     list-style: none;
 }
 
 .sidebar ul li {
-    padding: 10px 0;
+    padding: 0.625rem 0;
 }
 
 .sidebar nav ul li a {
     color: #b3b3b3;
     text-decoration: none;
     font-weight: 600;
-    font-size: 14px;
+    font-size: 0.875rem;
 }
 
 .library {
     background-color: #121212;
-    border-radius: 8px;
+    border-radius: 0.5rem;
     display: flex;
     justify-content: space-between;
     flex-direction: column;
-    padding: 4px 8px;
+    padding: 0.25rem 0.5rem;
     color: #b3b3b3;
     font-weight: 600;
-    font-size: 14px;
-    margin-top: 10px;
+    font-size: 0.875rem;
+    margin-top: 0.625rem;
 }
 
 .library .library__content {
@@ -66,42 +66,42 @@ body {
 
 .library .library__button {
     display: flex;
-    margin-right: 10px;
+    margin-right: 0.625rem;
     color: #b3b3b3;
     background-color: transparent;
-    border: 0px;
-    font-size: 14px;
+    border: 0;
+    font-size: 0.875rem;
     font-weight: 700;
     text-align: center;
     text-decoration: none;
     text-transform: none;
-    padding: 20px 10px;
+    padding: 1.25rem 0.625rem;
 }
 
 .library .library__button .fa {
-    font-size: 20px;
-    margin-right: 10px;
+    font-size: 1.25rem;
+    margin-right: 0.625rem;
     font-weight: 300;
-    padding-right: 8px;
+    padding-right: 0.5rem;
     color: #b3b3b3;
 }
 
 .library .library__content .fa-plus {
-    margin: 24px 10px;
+    margin: 1.5rem 0.625rem;
 }
 
 .section-playlist {
     display: flex;
     align-items: flex-start;
     justify-content: space-between;
-    gap: 20px;
+    gap: 1.25rem;
     background-color: #242424;
     color: #b3b3b3;
     font-weight: 600;
-    font-size: 14px;
-    margin: 8px 0px;
-    padding: 16px 20px;
-    border-radius: 10px;
+    font-size: 0.875rem;
+    margin: 0.5rem 0;
+    padding: 1rem 1.25rem;
+    border-radius: 0.625rem;
 }
 
 .section-playlist .section-playlist__content {
@@ -110,8 +110,8 @@ body {
 }
 
 .section-playlist__content .text {
-    padding-bottom: 14px;
-    color: #fff;
+    padding-bottom: 0.875rem;
+    color: #b3b3b3;
 }
 
 .section-playlist__content .title {
@@ -120,33 +120,33 @@ body {
 
 .section-playlist__content .subtitle {
     font-weight: 500;
-    font-size: 12px;
+    font-size: 0.75rem;
 }
 
 .section-playlist__content .section-playlist__button {
     display: flex;
     justify-content: center;
     background-color: #fff;
-    color: #000;
-    border-radius: 20px;
-    font-size: 12px;
+    color: var(--text-base-dark);
+    border-radius: 1.25rem;
+    font-size: 0.75rem;
     font-weight: 700;
     text-decoration: none;
     text-transform: none;
-    padding: 10px;
-    margin-top: 12px;
+    padding: 0.625rem;
+    margin-top: 0.75rem;
     border: 0;
-    width: 113px;
+    width: 7.0625rem;
 }
 
 .sidebar .cookies {
-    margin: 25px 20px;
+    margin: 1.5625rem 1.25rem;
 }
 
 .sidebar .cookies a {
     color: #b3b3b3;
     font-weight: 500;
-    font-size: 10px;
+    font-size: 0.625rem;
     text-decoration: none;
 }
 
@@ -157,14 +157,14 @@ body {
 .languages .languages__button {
     align-items: center;
     background-color: transparent;
-    border: 1px solid #878787;
-    color: #fff;
+    border: 0.0625rem solid #878787;
+    color: var(--text-base-light);
     font-weight: bold;
     cursor: pointer;
-    width: 170px;
-    margin: 8px;
-    padding: 8px;
-    border-radius: 20px;
+    width: 10.625rem;
+    margin: 0.5rem;
+    padding: 0.5rem;
+    border-radius: 1.25rem;
 }
 
 .subscribe-premium {
@@ -174,7 +174,7 @@ body {
     right: 0;
     display: flex;
     justify-content: space-between;
-    padding: 20px 20px;
+    padding: 1.25rem 1.25rem;
     background: linear-gradient(to right, #c511cb, #7426da, #2575fc);
 }
 
@@ -183,32 +183,32 @@ body {
 }
 
 .subscribe-premium .subscribe-premium__title {
-    color: #fff;
+    color: var(--text-base-light);
     text-transform: uppercase;
-    font-size: 12px;
+    font-size: 0.75rem;
     font-weight: 400;
-    margin-bottom: 10px;
+    margin-bottom: 0.625rem;
 }
 
 .subscribe-premium .subscribe-premium__subtitle {
-    color: #fff;
-    font-size: 14px;
+    color: var(--text-base-light);
+    font-size: 0.875rem;
     font-weight: 500;
 }
 
 .subscribe-premium button {
     background-color: #fff;
-    color: #000;
-    font-size: 16px;
+    color: var(--text-base-dark);
+    font-size: 1rem;
     font-weight: bold;
-    padding: 14px 30px;
-    border: 0px;
-    border-radius: 40px;
+    padding: 0.875rem 1.875rem;
+    border: 0;
+    border-radius: 2.5rem;
     cursor: pointer;
     flex-shrink: 0;
 }
 
 .subscribe-premium button:hover {
     background-color: #000;
-    color: #fff;
+    color: var(--text-base-light);
 }
